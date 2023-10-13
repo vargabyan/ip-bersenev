@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="mob">
+			<div class="menu-content">
+				<div class="mob-menu-block">
+					<div class="menu-logo">
+						<a href="#!"><img src="images/logo.svg" alt=""></a>
+						<a href="#!" class="menu-closer"><img src="images/icons/close.svg" alt=""></a>
+					</div>
+					<div class="mob-links">
+						<a href="#!">О компании</a>
+						<a href="#!">Сотрудничество</a>
+						<a href="#!">Доставка и оплата</a>
+						<a href="#!">Акции</a>
+						<a href="#!">Вакансии</a>
+						<a href="#!">Статьи</a>
+						<a href="#!">Новости</a>
+					</div>
+					<div class="mob-catalog">
+						<a href="#!">Каталог запчастей</a>
+						<a href="#!">Каталог аренды</a>
+						<a href="#!">Ремонт</a>
+						<a href="#!">Контакты</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+            <div class="container">
+                <div class="head-top">
+                    <div class="dropdown for-pc">
+                        <button class="dropdown-toggle location-btn" type="button" id="head-location"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/icons/location-icon.svg" alt="" class="icon">
+                            <div class="text">Екатеринбург</div>
+                            <img src="images/icons/down-blue-icon.svg" alt="" class="arrow">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="head-location">
+                            <li><a class="dropdown-item" href="#!">Action</a></li>
+                            <li><a class="dropdown-item" href="#!">Action</a></li>
+                            <li><a class="dropdown-item" href="#!">Action</a></li>
+                            <li><a class="dropdown-item" href="#!">Action</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top-menu for-pc">
+                        <ul>
+                            <li><a href="#!">О компании</a></li>
+                            <li><a href="#!">Сотрудничество</a></li>
+                            <li><a href="#!">Доставка и оплата</a></li>
+                            <li><a href="#!">Акции</a></li>
+                            <li><a href="#!">Вакансии</a></li>
+                            <li><a href="#!">Статьи</a></li>
+                            <li><a href="#!">Новости</a></li>
+                        </ul>
+                    </div>
+                    <div class="top-contact">
+                        <div class="head-order-btn">
+                            <a href="#!" class="blue-btn">Статус заказа</a>
+                        </div>
+                        <div class="head-tel for-pc">
+                            <a href="tel:8 900 000 000 00" class="tel">8 900 000 000 00</a>
+                            <a href="#!" class="call-back">Заказать звонок</a>
+                        </div>
+
+						<div class="nav-form mob">
+                            <form class="d-flex">
+                                <input class="form-input" type="search" placeholder="Поиск.." aria-label="Search">
+                                <button class="search-btn" type="submit"><img src="images/icons/search-icon-blue.svg" alt=""></button>
+                            </form>
+
+                            <a href="#!" class="user-btn" data-bs-toggle="modal" data-bs-target="#login-modal">
+                                <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.416667" y="0.416667" width="37.1667" height="27.1667" rx="7.91667" stroke="#A7A7A7" stroke-width="0.833333"/>
+									<path d="M12.5 8.98148V19.3519C12.5 20.1667 13.1593 20.8333 13.9815 20.8333H24.3519C25.1667 20.8333 25.8333 20.1667 25.8333 19.3519V8.98148C25.8333 8.16667 25.1667 7.5 24.3519 7.5H13.9815C13.1593 7.5 12.5 8.16667 12.5 8.98148ZM21.3889 11.9444C21.3889 13.1741 20.3963 14.1667 19.1667 14.1667C17.937 14.1667 16.9444 13.1741 16.9444 11.9444C16.9444 10.7148 17.937 9.72222 19.1667 9.72222C20.3963 9.72222 21.3889 10.7148 21.3889 11.9444ZM14.7222 17.8704C14.7222 16.3889 17.6852 15.5741 19.1667 15.5741C20.6481 15.5741 23.6111 16.3889 23.6111 17.8704V18.6111H14.7222V17.8704Z" fill="#0085FF"/>
+								</svg>
+                            </a>
+
+                            <a href="#!" class="cart-btn">
+                                <img src="images/icons/cart-img.svg" alt="">
+                                <div class="cart-count">2</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+			<div class="container nav-con">
+				<nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#!"><img src="images/logo.svg" alt=""></a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#!">Каталог запчастей</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Каталог аренды</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Ремонт</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">Контакты</a></li>
+                        </ul>
+
+                        <div class="nav-form for-pc">
+                            <form class="d-flex">
+                                <input class="form-input" type="search" placeholder="Поиск.." aria-label="Search">
+                                <button class="search-btn" type="submit"><img src="images/icons/search-icon.svg" alt=""></button>
+                            </form>
+
+                            <a href="#!" class="user-btn" data-bs-toggle="modal" data-bs-target="#login-modal">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="#fff" xmlns="http://www.w3.org/2000/svg"> <path d="M0 1.9184V14.3628C0 15.3406 0.791111 16.1406 1.77778 16.1406H14.2222C15.2 16.1406 16 15.3406 16 14.3628V1.9184C16 0.940625 15.2 0.140625 14.2222 0.140625H1.77778C0.791111 0.140625 0 0.940625 0 1.9184ZM10.6667 5.47396C10.6667 6.94951 9.47556 8.14063 8 8.14063C6.52444 8.14063 5.33333 6.94951 5.33333 5.47396C5.33333 3.9984 6.52444 2.80729 8 2.80729C9.47556 2.80729 10.6667 3.9984 10.6667 5.47396ZM2.66667 12.5851C2.66667 10.8073 6.22222 9.82951 8 9.82951C9.77778 9.82951 13.3333 10.8073 13.3333 12.5851V13.474H2.66667V12.5851Z" fill="#fff" />
+                                </svg>
+                            </a>
+
+                            <a href="#!" class="cart-btn">
+                                <img src="images/icons/cart-img.svg" alt="">
+                                <div class="cart-count">2</div>
+                            </a>
+                        </div>
+                    </div>
+
+					<div class="mob">
+						<div class="mob-menu">
+							<div class="head-tel for-mob">
+								<a href="tel:8 900 000 000 00" class="tel">8 900 000 000 00</a>
+								<a href="#!" class="call-back">Заказать звонок</a>
+							</div>
+
+							<a href="#!" class="menu-opener">
+								<span class="one"></span>
+								<span class="two"></span>
+								<span class="three"></span>
+							</a>
+						</div>
+					</div>
+                </nav>
+			</div>
+        </header>
+
+		<main>
+            <div class="bread-crumbs">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#!">Главная</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Аренда</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+			<section class="rental-category">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="single-title">
+								<h2>Аренда инструментов алмазного бурения</h2>
+								<p><span>Сервис | Мастер</span> – компания, которая занимается ремонтом строительного оборудования и инструмента, предоставляет услуги по аренде средств малой механизации..</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="rental-block">
+						<form action="#!">
+							<div class="search-block">
+								<input type="search" placeholder="Поиск">
+								<button><img src="images/icons/search-icon-blue.svg" alt=""></button>
+							</div>
+						</form>
+
+						<div class="row rental-rov">
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 hidden">
+								<a href="#!" class="rental-card">
+									<div class="rental-text">
+										<span>{5 товаров}</span>
+										<p>Алмазное бурение</p>
+									</div>
+									<div class="rental-img">
+										<img src="images/product-img.png" alt="">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </section>
+
+			<section class="help-sec">
+				<div class="container">
+					<div class="help-block">
+						<div class="help-left">
+							<h2>Нужна помощь мастера, оставьте заявку на консультацию</h2>
+
+							<div class="mob">
+								<p>Рыбныыыыыыый текст который покорит сердца ваших клиентов, Рыбныыыыыыый текст который покорит сердца ваших клиентов</p>
+							</div>
+						</div>
+
+						<div class="help-link">
+							<a href="#!" class="help-btn">Заказать звонок
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="8" viewBox="0 0 17 8" fill="none">
+										<path d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464467C12.9763 0.269205 12.6597 0.269205 12.4645 0.464467C12.2692 0.659729 12.2692 0.976312 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53554L16.3536 4.35355ZM-4.37114e-08 4.5L16 4.5L16 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#303030"/>
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="index-brand">
+				<div class="container">
+					<div class="title">
+						<div class="in-title">
+							<h2>Все бренды</h2>
+						</div>
+						<div class="link-btn-block">
+							<a href="#!" class="link-btn">Посмотреть все
+								<span>
+									<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector 20" d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464467C12.9763 0.269205 12.6597 0.269205 12.4645 0.464467C12.2692 0.659729 12.2692 0.976312 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53554L16.3536 4.35355ZM-4.37114e-08 4.5L16 4.5L16 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="white"></path>
+									</svg>
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a href="#!" class="brand-card">
+								<img src="images/brands.png" alt="">
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a href="#!" class="brand-card">
+								<img src="images/brands.png" alt="">
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6">
+							<a href="#!" class="brand-card">
+								<img src="images/brands.png" alt="">
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6 hidden">
+							<a href="#!" class="brand-card">
+								<img src="images/brands.png" alt="">
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6 hidden">
+							<a href="#!" class="brand-card">
+								<img src="images/brands.png" alt="">
+							</a>
+						</div>
+						<div class="col-xl-2 col-lg-3 col-md-4 col-6 hidden">
+							<a href="#!" class="brand-card">
+								<img src="images/brands.png" alt="">
+							</a>
+						</div>
+
+						<div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 for-mob">
+							<a href="#!" class="warranty-card mob-card">Смотреть <br> все бренды</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="index-seo rental-seo">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-9">
+							<div class="seo-title">
+								<h2>СЕО текст</h2>
+							</div>
+							<div class="seo-text">
+								<p>Сервис– компания, которая занимается ремонтом строительного оборудования и инструмента, предоставляет услуги по аренде средств малой механизации..</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="ftr-logo">
+							<a href="#!"><img src="images/ftr-logo.svg" alt=""></a>
+
+							<div class="ftr-contact pc">
+								<span>{Сервисный центр}</span>
+								<a href="tel:8 900 000 00 00 ">8 900 000 00 00 </a>
+							</div>
+
+							<div class="ftr-contact pc">
+								<span>{Отдел продаж, офис}</span>
+								<a href="tel:8 900 000 00 00 ">8 900 000 00 00 </a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-6">
+						<div class="ftr-menu">
+							<a href="#!">Каталог запчастей</a>
+							<a href="#!">Каталог аренды</a>
+							<a href="#!">Ремонт</a>
+							<a href="#!">Акции</a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-6">
+						<div class="ftr-menu">
+							<a href="#!">О компании</a>
+							<a href="#!">Сотрудничество</a>
+							<a href="#!">Доставка и оплата</a>
+							<a href="#!">Вакансии</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-2 ftr-col">
+						<div class="ftr-menu">
+							<a href="#!">Статьи</a>
+							<a href="#!">Новости</a>
+							<a href="#!">Контакты</a>
+						</div>
+						<div class="ftr-social pc">
+							<a href="#!" class="wt">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+									<g clip-path="url(#clip0_1233_2751)">
+									  <path d="M6.0868 19.4541C5.50013 19.0899 2.64013 21.2024 2.20013 20.6925C1.76013 20.2554 3.6668 17.2687 3.30013 16.7587C2.1268 15.1561 1.4668 13.1892 1.4668 11.0766C1.4668 5.6859 5.8668 1.24219 11.3668 1.24219C16.8668 1.24219 21.2668 5.6859 21.2668 11.0766C21.2668 16.4674 16.8668 20.9111 11.3668 20.9111C10.6335 20.9111 9.97346 20.8382 9.31346 20.6925" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									  <path d="M9.3124 6.12668L10.1924 8.31211C10.2657 8.4578 10.1924 8.6035 10.0457 8.67635C9.67907 8.89489 9.16574 9.40482 9.7524 10.2061C10.4857 11.226 12.4657 13.7757 14.0791 12.1002C14.1524 12.0273 14.2991 11.9545 14.4457 12.0273L16.7924 13.0472C16.9391 13.1201 17.0124 13.3386 16.9391 13.4843C16.4257 14.5042 14.4457 17.1995 9.5324 12.9744C4.54574 8.67635 7.7724 6.56376 8.8724 6.05383C9.01907 5.83529 9.23907 5.90813 9.3124 6.12668Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									</g>
+									<defs>
+									  <clipPath id="clip0_1233_2751">
+										<rect width="22" height="22" fill="white"/>
+									  </clipPath>
+									</defs>
+								</svg>
+							</a>
+
+							<a href="#!" class="tg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+									<path d="M1.53046 10.6694C6.4841 8.76905 20.7622 2.92188 20.7622 2.92188L17.9212 19.4401C17.7755 20.2441 16.8285 20.5365 16.2457 20.0249L11.802 16.2973L8.66953 19.2209L9.17947 14.3239L18.6497 5.33384L6.99404 12.6428L7.72252 16.8089L5.31854 12.9352L1.67616 11.7657C1.09338 11.5465 1.02053 10.8156 1.53046 10.6694Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="mob">
+						<div class="mob-ftr">
+							<div class="mob-ftr-tel">
+								<a href="tel:+7 900 395 23 90" class="m-tel">+7 900 395 23 90</a>
+								<a href="mailto:ftes.home96@gmail.ru" class="m-mail">ftes.home96@gmail.ru</a>
+							</div>
+							<div class="ftr-social">
+								<a href="#!" class="wt">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<g clip-path="url(#clip0_1233_2751)">
+										  <path d="M6.0868 19.4541C5.50013 19.0899 2.64013 21.2024 2.20013 20.6925C1.76013 20.2554 3.6668 17.2687 3.30013 16.7587C2.1268 15.1561 1.4668 13.1892 1.4668 11.0766C1.4668 5.6859 5.8668 1.24219 11.3668 1.24219C16.8668 1.24219 21.2668 5.6859 21.2668 11.0766C21.2668 16.4674 16.8668 20.9111 11.3668 20.9111C10.6335 20.9111 9.97346 20.8382 9.31346 20.6925" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										  <path d="M9.3124 6.12668L10.1924 8.31211C10.2657 8.4578 10.1924 8.6035 10.0457 8.67635C9.67907 8.89489 9.16574 9.40482 9.7524 10.2061C10.4857 11.226 12.4657 13.7757 14.0791 12.1002C14.1524 12.0273 14.2991 11.9545 14.4457 12.0273L16.7924 13.0472C16.9391 13.1201 17.0124 13.3386 16.9391 13.4843C16.4257 14.5042 14.4457 17.1995 9.5324 12.9744C4.54574 8.67635 7.7724 6.56376 8.8724 6.05383C9.01907 5.83529 9.23907 5.90813 9.3124 6.12668Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+										</g>
+										<defs>
+										  <clipPath id="clip0_1233_2751">
+											<rect width="22" height="22" fill="white"/>
+										  </clipPath>
+										</defs>
+									</svg>
+								</a>
+	
+								<a href="#!" class="tg">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M1.53046 10.6694C6.4841 8.76905 20.7622 2.92188 20.7622 2.92188L17.9212 19.4401C17.7755 20.2441 16.8285 20.5365 16.2457 20.0249L11.802 16.2973L8.66953 19.2209L9.17947 14.3239L18.6497 5.33384L6.99404 12.6428L7.72252 16.8089L5.31854 12.9352L1.67616 11.7657C1.09338 11.5465 1.02053 10.8156 1.53046 10.6694Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 ftr-politic">
+						<a href="#!">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal Login -->
+    <div class="modal fade lg-modal" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLogin" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M1 1L17 17" stroke="#0085FF" stroke-width="2"/>
+                            <path d="M17 1L1 17" stroke="#0085FF" stroke-width="2"/>
+                          </svg>
+                    </button>
+                    <div class="login">
+                        <div class="login__content">
+                            <h1 class="login-title">Вход в личный кабинет</h1>
+    
+                            <div class="login__inp-wrap">
+                                <div class="login__inp-item">
+                                    <label class="login__inp-title">E-mail*</label>
+                                    <input type="email" placeholder="ivan@mail.ru" class="login__input">
+                                </div>
+                                <div class="login__inp-item">
+                                    <label class="login__inp-title">Пароль</label>
+                                    <input type="text" placeholder="3456789opknbe" class="login__input">
+                                </div>
+                            </div>
+    
+                            <div class="login__check-wrap">
+                                <div class="login__check">
+                                    <input id="loginCheck" type="checkbox">
+                                    <label for="loginCheck">Запомнить меня</label>
+                                </div>
+                                <a href="#!">Забыли пароль?</a>
+                            </div>
+    
+                            <button class="login-btn">Авторизоваться</button>
+                        </div>
+    
+                        <div class="registration__btn-wrap">
+                            <a href="./registration.html" class="registration-btn" data-bs-toggle="modal" data-bs-target="#registration-modal">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal registration -->
+    <div class="modal fade xl-modal" id="registration-modal" tabindex="-1" aria-labelledby="exampleModalReg" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M1 1L17 17" stroke="#0085FF" stroke-width="2"/>
+                            <path d="M17 1L1 17" stroke="#0085FF" stroke-width="2"/>
+                          </svg>
+                    </button>
+                    
+                    <div class="registration">
+                        <div class="registration__content">
+                            <h1 class="login-title">рЕГИСТРАЦИЯ В ЛИЧНОМ КАБИНЕТЕ</h1>
+                            <p class="login__link">Уже зарегистрированы? <a href="#!" data-bs-toggle="modal" data-bs-target="#login-modal">Войдите</a> в личный кабинет.
+                            </p>
+                            <p class="registration-text">Мы никогда и ни при каких условиях не разглашаем личные данные
+                                клиентов. Контактная
+                                информация будет использована только для оформления заказов и более дуобной работы с сайтом.
+                            </p>
+        
+                            <div class="login__inp-wrap">
+                                <div class="login__inp-box">
+                                    <div class="login__inp-item">
+                                        <label class="login__inp-title">Фамилия Имя Отчество*</label>
+                                        <input type="text" placeholder="Иван Иванов Иванович" class="login__input">
+                                    </div>
+                                    <p class="registration__inp-text">Заполните, чтобы мы знали как к вам обращаться</p>
+                                </div>
+        
+                                <div class="login__inp-box">
+                                    <div class="login__inp-item">
+                                        <label class="login__inp-title">E-mail*</label>
+                                        <input type="email" placeholder="ivan@mail.ru" class="login__input">
+                                    </div>
+                                    <p class="registration__inp-text">Для отправки уведомлений о статусе заказа. Используйте
+                                        как логин для входа в личный кабинет</p>
+                                </div>
+        
+                                <div class="login__inp-box">
+                                    <div class="login__inp-item">
+                                        <label class="login__inp-title">Телефон*</label>
+                                        <input type="number" placeholder="+7 (999) 932-32-32" class="login__input">
+                                    </div>
+                                    <p class="registration__inp-text">Необходим для уточнения деталей заказа</p>
+                                </div>
+        
+                                <div class="login__inp-box">
+                                    <div class="login__inp-item">
+                                        <label class="login__inp-title">Пароль</label>
+                                        <input type="text" placeholder="3456789opknbe" class="login__input">
+                                    </div>
+                                    <p class="registration__inp-text">Пароль должен состоять минимум из 6 знаков</p>
+                                </div>
+        
+                                <div class="login__inp-box">
+                                    <div class="login__inp-item">
+                                        <label class="login__inp-title">Повторите пароль</label>
+                                        <input type="text" placeholder="3456789opknbe" class="login__input">
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="login__check-wrap">
+                                <div class="login__check">
+                                    <input id="loginCheck" type="checkbox">
+                                    <label for="loginCheck">Я согласен на обработку своих персональных данных</label>
+                                </div>
+                            </div>
+        
+                            <button class="login-btn">Зарегистрироваться</button>
+        
+                            <p class="register__login-link">Уже есть аккаунт? <a href="#!" data-bs-toggle="modal" data-bs-target="#login-modal">Войти</a></p>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="libs/bootstrap5/popper.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
