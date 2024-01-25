@@ -204,7 +204,7 @@
 						<div class="row">
 							<div class="col-lg-7 offset-lg-2">
 								<div class="content-left">
-									<div class="text-title">
+									<div class="text-title" id="title_1">
 										<p>Щикарный заголовок статьи в 2 строки, но она же в одну Щикарный заголовок статьи в 2 строки, но она же в одну</p>
 									</div>
 									<div class="text-description">
@@ -225,7 +225,7 @@
 									<div class="content-right-title">
 										<p>Содержание</p>
 									</div>
-									<div class="content-desc">
+									<div class="content-desc" id="title_2">
 										<span>Щикарный заголовок статьи в 2 строки, но она же в одну</span>
 										<p>Щикарный заголовок статьи в 2 строки, но она же в одну</p>
 										<p>Щикарный заголовок статьи в 2 строки, но она же в одну</p>
@@ -246,7 +246,7 @@
 									<div class="text-description">
 										<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
 										<div class="super-btn">
-											<a href="#!">Читать статью</a>
+											<a href="#">Читать статью</a>
 										</div>
 										<p>lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
 									</div>
@@ -274,17 +274,18 @@
 					<div class="help-block help-article">
 						<div class="help-left help-article-left">
 							<h2>призыв к дейстию</h2>
-							<p>Рыбныыыыыыый текст который покорит сердца ваших клиентов, Рыбныыыыыыый текст который покорит сердца ваших клиентов</p>
+							<a href="#title_1">Рыбныыыыыыый текст который покорит сердца ваших клиентов,</a>
+							<a href="#title_2">Рыбныыыыыыый текст который покорит сердца ваших клиентов,</a>
 						</div>
 
 						<div class="help-link">
-							<a href="#!" class="help-btn">Заказать звонок
+							<button class="help-btn" data-help-btn>Заказать звонок
 								<span>
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="8" viewBox="0 0 17 8" fill="none">
 										<path d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464467C12.9763 0.269205 12.6597 0.269205 12.4645 0.464467C12.2692 0.659729 12.2692 0.976312 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53554L16.3536 4.35355ZM-4.37114e-08 4.5L16 4.5L16 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#303030"></path>
 									</svg>
 								</span>
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -525,6 +526,26 @@
             </div>
         </div>
     </div>
+
+	<section class="popup-level-repair" data-popup-level-repair>
+		<div class="popup-level-repair_content">
+			<button class="popup-level-repair_close" data-popup-level-repair_close></button>
+			<p class="popup-level-repair_header">как определить уровень сложности ремонта</p>
+			<label class="popup-level-repair_label">
+				Имя
+				<input class="popup-level-repair_input" type="text" placeholder="Иван">
+			</label>
+			<label class="popup-level-repair_label">
+				Номер телефона
+				<input class="popup-level-repair_input" type="text" placeholder="8 900 000 00 00">
+			</label>
+			<button class="popup-level-repair_submit" type="submit">Узнать у специалиста <div class="popup-level-repair_submit_icon-box"></div></button>
+			<p class="popup-level-repair_rule">
+				Я даю свое согласие на
+				<span>обработку <br> персональных данных</span>
+			</p>
+		</div>
+	</section>
 
 	<script src="js/jquery-3.7.0.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>

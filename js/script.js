@@ -287,6 +287,16 @@ document.addEventListener('click', (e) => {
 })
 
 document.addEventListener('click', (e) => {
+    const button = e.target.closest('[data-help-btn]');
+
+    if (button) {
+        const popup = document.querySelector('[data-popup-level-repair]');
+
+        popup.classList.add('popup-level-repair-open');
+    }
+})
+
+document.addEventListener('click', (e) => {
     const button = e.target.closest('[data-popup-diagnostics_close]');
 
     if (button) {
