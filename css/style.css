@@ -5730,13 +5730,13 @@ input::-webkit-inner-spin-button {
 	flex-direction: column;
 	gap: 15px 0;
 }
-.content-desc span{
+.content-desc a.active{
 	color: #0085FF;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 22px;
 }
-.content-desc p{
+.content-desc a{
 	color: #444;
 	font-size: 14px;
 	font-weight: 500;

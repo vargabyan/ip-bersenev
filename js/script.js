@@ -307,5 +307,32 @@ document.addEventListener('click', (e) => {
 })
 
 
+document.addEventListener('click', (e) => {
+    const item = e.target.closest('[data-content-desc-item]');
+
+    if (item) {
+        const allWrapper = document.querySelectorAll('[data-content-desc]');
+        const wrapper = item.closest('[data-content-desc]');
+        let currentIndex = 0;
+
+        wrapper.querySelectorAll('[data-content-desc-item]').forEach((elem, index) => {
+            if (elem === item) {
+                currentIndex = index
+            }
+        })
+
+        allWrapper.forEach((wrap) => {
+            wrap.querySelectorAll('[data-content-desc-item]').forEach((elem, index) => {
+                if (currentIndex === index) {
+                    elem.classList.add('active');
+                } else {
+                    elem.classList.remove('active');
+                }
+            })
+        })
+    }
+})
+
+
 
 
