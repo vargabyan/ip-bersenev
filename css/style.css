@@ -1402,6 +1402,7 @@ h2 {
 	padding: 7px 7px 7px 30px;
 	background-color: #0085FF;
 	border-radius: 100px;
+	border: none;
 }
 .help-link .help-btn  img {
 	position: inherit;
@@ -2312,7 +2313,7 @@ h2 {
 .about-sec .about-card .about-card-links a:hover {
 	color: #0085FF;
 }
-.single-title.white h2 {
+.single-title.white h1 {
 	color: #fff;
 }
 .about-sec .about-card .single-title {
@@ -2607,7 +2608,7 @@ h2 {
 	max-width: 428px;
 	margin-left: auto;
 }
-.call-block .single-title h2 {
+.call-block .single-title h1 {
 	max-width: 326px;
 }
 .call-block .single-title p {
@@ -3031,7 +3032,7 @@ h2 {
 .difficulty-level .single-title {
 	margin-bottom: 0;
 }
-.difficulty-level .single-title h2 {
+.difficulty-level .single-title h1 {
 	max-width: 444px;
 	margin-bottom: 34px;
 }
@@ -4898,7 +4899,7 @@ input::-webkit-inner-spin-button {
 	position: relative;
 	z-index: 2;
 }
-.tracking-title h2{
+.tracking-title h1 {
 	color: #fff;
 	margin-bottom: 35px;
 }
@@ -5109,7 +5110,7 @@ input::-webkit-inner-spin-button {
 	background: #fff;
 }
 /* article */
-.articles-title h2{
+.articles-title h1{
 	margin-bottom: 40px;
 }
 .super-article{
@@ -5216,7 +5217,7 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 }
 /* news */
-.news-title h2{
+.news-title h1{
 	margin-bottom: 40px;
 }
 .super-news{
@@ -5596,7 +5597,7 @@ input::-webkit-inner-spin-button {
 .read-left .super-date{
 	margin-bottom: 15px;
 }
-.read-left h2{
+.read-left h1{
 	color: #fff;
 	max-width: 315px;
 	width: 100%;
@@ -5718,6 +5719,7 @@ input::-webkit-inner-spin-button {
 .content-right{
 	border-left: 1px solid #E5E5E5;
 	padding: 0 30px 50px 30px;
+	max-width: 296px;
 }
 .content-right-title p{
 	color: #444;
@@ -7448,7 +7450,7 @@ footer .ftr-politic a:hover {
 		justify-content: flex-start;
 		gap: 20px;
 	}
-	.about-page .about-card .single-title.white h2 {
+	.about-page .about-card .single-title.white h1 {
 		margin-top: 10px;
 	}
 	.about-page .about-sec .about-card .about-card-block {
