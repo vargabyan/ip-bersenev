@@ -5492,9 +5492,7 @@ input::-webkit-inner-spin-button {
 	font-weight: 500;
 	text-decoration-line: underline;
 }
-.description-link a:hover {
-	text-decoration: none;
-}
+
 .description-text{
 	max-width: 665px;
 	margin-bottom: 50px;
@@ -8230,6 +8228,7 @@ footer .ftr-politic a:hover {
 		display: none !important;
 	}
 	.all-brands-btn a {
+		color: #0085FF;
 		font-size: 12px;
 		padding: 8px 22px;
 	}
