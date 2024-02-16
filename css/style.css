@@ -5192,7 +5192,7 @@ input::-webkit-inner-spin-button {
 .article-description{
 	display: flex;
 	flex-direction: column;
-	gap: 32px 0;
+	gap: 16px;
 }
 .article-description span{
 	color: #444;
@@ -5280,11 +5280,9 @@ input::-webkit-inner-spin-button {
 	border-top-left-radius: 15px;
 	border-top: 1px solid #EDEDED;
 	border-left: 1px solid #EDEDED;
-	gap: 0 90px;
-	display: grid;
-	grid-template-areas:
-		'a b'
-		'c c';
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 .news-card p{
 	width: 100%;
