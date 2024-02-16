@@ -5248,6 +5248,7 @@ input::-webkit-inner-spin-button {
 	background-size: cover;	
 	height: 100%;
 	padding: 40px;
+	border-radius: 20px;
 }
 .super-news-right .super-date{
 	margin-bottom: 15px;
