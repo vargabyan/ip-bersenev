@@ -5199,7 +5199,7 @@ input::-webkit-inner-spin-button {
 	font-size: 24px;
 	font-weight: 700;
 }
-.article-description p{
+.article-description {
 	color: #68687D;
 	font-size: 14px;
 	font-weight: 400;
@@ -5280,12 +5280,13 @@ input::-webkit-inner-spin-button {
 	border-top-left-radius: 15px;
 	border-top: 1px solid #EDEDED;
 	border-left: 1px solid #EDEDED;
-	display: flex;
 	gap: 0 90px;
-
+	display: grid;
+	grid-template-areas:
+		'a b'
+		'c c';
 }
 .news-card p{
-	max-width: 370px;
 	width: 100%;
 }
 
