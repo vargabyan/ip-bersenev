@@ -16,23 +16,29 @@
 <body>
 
     <section class="popup-level-repair popup-level-repair-open" data-popup-level-repair>
-        <div class="popup-level-repair_content">
+        <form class="popup-level-repair_content">
             <button class="popup-level-repair_close" data-popup-level-repair_close></button>
-            <p class="popup-level-repair_header">как определить уровень сложности ремонта</p>
+            <p class="popup-level-repair_header">заказать звонок</p>
             <label class="popup-level-repair_label">
-                Имя
-                <input class="popup-level-repair_input" type="text" placeholder="Иван">
+                Имя*
+                <input class="popup-level-repair_input" type="text" placeholder="Иван Иванов Иванович">
             </label>
             <label class="popup-level-repair_label">
-                Номер телефона
-                <input class="popup-level-repair_input" type="text" placeholder="8 900 000 00 00">
+                Телефон*
+                <input class="popup-level-repair_input" type="text" placeholder="+7 (999) 932-32-32">
             </label>
-            <button class="popup-level-repair_submit" type="submit">Узнать у специалиста <div class="popup-level-repair_submit_icon-box"></div></button>
-            <p class="popup-level-repair_rule">
-                Я даю свое согласие на
-                <span>обработку <br> персональных данных</span>
-            </p>
-        </div>
+            <button class="popup-level-repair_submit" type="submit">Отправить данные</button>
+            <div class="popup-level-repair_rule-wrapper">
+                <label class="popup-level-repair_checkbox-label">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <p class="popup-level-repair_rule">
+                    Даю согласие на обработку
+                    <a href="#">своих персональных данных</a>
+                </p>
+            </div>
+        </form>
     </section>
 
 
