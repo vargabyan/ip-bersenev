@@ -1478,7 +1478,7 @@ h2 {
 	font-weight: 600;
 	line-height: 12px;
 }
-.product-filter .accordion-body {
+.product-filter .accordion-body[page-type="spares-subcategory"] {
 	/* padding: 20px 22px 14px; */
 	border-top: 1px solid #E5E5E5;
 }
@@ -6028,6 +6028,9 @@ footer .ftr-politic a:hover {
 	justify-content: center;
 	gap: 0 14px;
 }
+.pagination.article {
+	margin: 60px 0 0;
+}
 .page-link {
 	border: none;
 	color: #68687D;
@@ -6279,12 +6282,11 @@ footer .ftr-politic a:hover {
 
 
 .mini-pic,
-.for-tab,
+/*.for-tab,*/
 .for-mob,
 .mob {
 	display: none !important;
 }
-
 
 
 
@@ -9346,12 +9348,11 @@ footer .ftr-politic a:hover {
 	right: 0;
 	left: 0;
 	bottom: 0;
-	width: 100vw;
-	height: 100Vh;
+	width: 100%;
+	height: 100%;
 	display: none;
-	justify-content: center;
-	align-items: center;
 	background: rgba(60, 60, 60, 0.80);
+	overflow-y: auto;
 }
 
 .popup-level-repair-open {
@@ -9359,6 +9360,7 @@ footer .ftr-politic a:hover {
 }
 
 .popup-level-repair_content {
+	margin: auto;
 	max-width: 610px;
 	width: 100%;
 	border-radius: 20px;
@@ -9375,11 +9377,12 @@ footer .ftr-politic a:hover {
 	top: 24px;
 	display: block;
 	content: '';
-	width: 16px;
-	height: 16px;
+	width: 18px;
+	height: 18px;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M1 1L17 17' stroke='%230085FF' stroke-width='2'/%3E%3Cpath d='M17 1L1 17' stroke='%230085FF' stroke-width='2'/%3E%3C/svg%3E");
 	border: none;
 	cursor: pointer;
+	background-color: unset;
 }
 
 .popup-level-repair_header {
@@ -9657,6 +9660,887 @@ footer .ftr-politic a:hover {
 	}
 }
 
+
+.others-article {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin: 80px auto 0 auto;
+	max-width: 1320px;
+	width: 100%;
+}
+
+.others-article_title {
+	color: #444;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.others-article_items-wrapper {
+	display: flex;
+	column-gap: 69px;
+}
+
+.others-article_item {
+	max-width: 601px;
+	width: 100%;
+}
+
+.others-article_item_date {
+	display: flex;
+	padding: 6px;
+	gap: 10px;
+	border-radius: 10px;
+	background: #0085FF;
+	width: max-content;
+	align-items: center;
+	height: 28px;
+
+	color: #FFF;
+	font-size: 10px;
+	line-height: 28px;
+}
+
+.others-article_item_date:before {
+	display: block;
+	content: '';
+	width: 12px;
+	height: 13px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='14' viewBox='0 0 12 14' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.15385 0.5C4.40875 0.5 4.61539 0.703034 4.61539 0.953488V1.71572C5.02722 1.7093 5.48482 1.7093 5.9932 1.7093H6.0068C6.51518 1.7093 6.97278 1.7093 7.38462 1.71572V0.953488C7.38462 0.703034 7.59125 0.5 7.84615 0.5C8.10105 0.5 8.30769 0.703034 8.30769 0.953488V1.74775C9.2381 1.80506 9.95289 1.95319 10.5414 2.3733C10.8418 2.58775 11.106 2.84731 11.3242 3.14247C11.6847 3.63001 11.8462 4.20103 11.9239 4.90578C12 5.59637 12 6.46682 12 7.57728V7.61158C12 8.3129 12 8.91588 11.9819 9.43413C11.9424 10.5669 11.8177 11.3995 11.3242 12.0668C11.106 12.362 10.8418 12.6216 10.5414 12.836C9.86222 13.3208 9.01485 13.4434 7.86196 13.4822C7.33441 13.5 6.72059 13.5 6.00664 13.5H5.97214C4.84197 13.5 3.95607 13.5 3.25322 13.4252C2.53596 13.3488 1.95481 13.1902 1.45861 12.836C1.15821 12.6216 0.894037 12.362 0.675786 12.0668C0.315276 11.5793 0.15385 11.0083 0.0761404 10.3035C-9.01406e-06 9.61293 -5.01527e-06 8.74247 8.32151e-08 7.63201V7.57729C-5.01527e-06 6.46683 -9.01406e-06 5.59637 0.0761404 4.90578C0.15385 4.20103 0.315276 3.63001 0.675786 3.14247C0.894037 2.84731 1.15821 2.58775 1.45861 2.3733C2.04711 1.95319 2.7619 1.80506 3.69231 1.74775V0.953488C3.69231 0.703034 3.89895 0.5 4.15385 0.5ZM3.69231 2.65694C2.85412 2.71358 2.37032 2.84354 2.00118 3.10706C1.77914 3.26556 1.58389 3.45742 1.42257 3.67558C1.19544 3.98274 1.06305 4.37589 0.993847 5.00347C0.923711 5.63953 0.923077 6.46091 0.923077 7.60465C0.923077 8.74839 0.923711 9.56977 0.993847 10.2058C1.06305 10.8334 1.19544 11.2266 1.42257 11.5337C1.58389 11.7519 1.77915 11.9437 2.00118 12.1022C2.3138 12.3254 2.71393 12.4555 3.35264 12.5235C4 12.5924 4.83596 12.593 6 12.593C6.52206 12.593 6.97956 12.593 7.38574 12.5865C7.38843 12.2995 7.39752 12.0882 7.42818 11.898C7.66799 10.4103 8.85546 9.24355 10.3695 9.00792C10.5631 8.97779 10.7782 8.96886 11.0703 8.96622C11.0769 8.56713 11.0769 8.11761 11.0769 7.60465C11.0769 6.46091 11.0763 5.63953 11.0062 5.00347C10.937 4.37589 10.8046 3.98274 10.5774 3.67558C10.4161 3.45742 10.2209 3.26556 9.99882 3.10706C9.62968 2.84354 9.14588 2.71358 8.30769 2.65694V2.76744C8.30769 3.0179 8.10105 3.22093 7.84615 3.22093C7.59125 3.22093 7.38462 3.0179 7.38462 2.76744V2.6228C6.97872 2.61631 6.52158 2.61628 6 2.61628C5.47842 2.61628 5.02128 2.61631 4.61539 2.6228V2.76744C4.61539 3.0179 4.40875 3.22093 4.15385 3.22093C3.89895 3.22093 3.69231 3.0179 3.69231 2.76744V2.65694ZM11.0354 9.87378C10.7862 9.87661 10.6401 9.8841 10.5139 9.90373C9.39484 10.0779 8.51714 10.9403 8.33989 12.0399C8.31991 12.1638 8.31229 12.3074 8.30941 12.5522C9.14654 12.4955 9.62993 12.3656 9.99882 12.1022C10.2209 11.9437 10.4161 11.7519 10.5774 11.5337C10.8454 11.1713 10.9777 10.6963 11.0354 9.87378Z' fill='white'/%3E%3Cpath d='M3.53846 5.18605C3.53846 5.51999 3.26294 5.7907 2.92308 5.7907C2.58321 5.7907 2.30769 5.51999 2.30769 5.18605C2.30769 4.85211 2.58321 4.5814 2.92308 4.5814C3.26294 4.5814 3.53846 4.85211 3.53846 5.18605Z' fill='white'/%3E%3Cpath d='M3.53846 7.60465C3.53846 7.93859 3.26294 8.2093 2.92308 8.2093C2.58321 8.2093 2.30769 7.93859 2.30769 7.60465C2.30769 7.27071 2.58321 7 2.92308 7C3.26294 7 3.53846 7.27071 3.53846 7.60465Z' fill='white'/%3E%3Cpath d='M6.61539 5.18605C6.61539 5.51999 6.33987 5.7907 6 5.7907C5.66013 5.7907 5.38462 5.51999 5.38462 5.18605C5.38462 4.85211 5.66013 4.5814 6 4.5814C6.33987 4.5814 6.61539 4.85211 6.61539 5.18605Z' fill='white'/%3E%3Cpath d='M6.61539 7.60465C6.61539 7.93859 6.33987 8.2093 6 8.2093C5.66013 8.2093 5.38462 7.93859 5.38462 7.60465C5.38462 7.27071 5.66013 7 6 7C6.33987 7 6.61539 7.27071 6.61539 7.60465Z' fill='white'/%3E%3Cpath d='M6.61539 10.0233C6.61539 10.3572 6.33987 10.6279 6 10.6279C5.66013 10.6279 5.38462 10.3572 5.38462 10.0233C5.38462 9.68932 5.66013 9.4186 6 9.4186C6.33987 9.4186 6.61539 9.68932 6.61539 10.0233Z' fill='white'/%3E%3Cpath d='M9.69231 5.18605C9.69231 5.51999 9.41679 5.7907 9.07692 5.7907C8.73706 5.7907 8.46154 5.51999 8.46154 5.18605C8.46154 4.85211 8.73706 4.5814 9.07692 4.5814C9.41679 4.5814 9.69231 4.85211 9.69231 5.18605Z' fill='white'/%3E%3Cpath d='M9.69231 7.60465C9.69231 7.93859 9.41679 8.2093 9.07692 8.2093C8.73706 8.2093 8.46154 7.93859 8.46154 7.60465C8.46154 7.27071 8.73706 7 9.07692 7C9.41679 7 9.69231 7.27071 9.69231 7.60465Z' fill='white'/%3E%3Cpath d='M3.53846 10.0233C3.53846 10.3572 3.26294 10.6279 2.92308 10.6279C2.58321 10.6279 2.30769 10.3572 2.30769 10.0233C2.30769 9.68932 2.58321 9.4186 2.92308 9.4186C3.26294 9.4186 3.53846 9.68932 3.53846 10.0233Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.others-article_item_title {
+	margin-top: 10px;
+	color: #444;
+
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.others-article_item_content-text {
+	margin-top: 12px;
+	color: #68687D;
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px
+}
+
+.others-article_item_btn {
+	margin-top: 20px;
+	padding: 14px 38px;
+	border-radius: 100px;
+	background: #E4F3FF;
+
+	color: #0085FF;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.others-article_item_btn:hover {
+	color: #0085FF;
+}
+
+
+.popup-level-repair_name {
+	margin-top: 32px;
+
+	color: #0085FF;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.popup-level-repair_dividing-line {
+	margin-top: 16px;
+}
+
+
+.popup-level-repair_img-wrapper {
+	margin-bottom: -12px;
+	margin-top: 7px;
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.popup-level-repair_img {
+	width: 80px;
+	height: 60px;
+	object-fit: cover;
+}
+
+.popup-level-repair_product-name {
+	color: #444;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.popup-select-amount {
+	max-width: 829px;
+	width: 100%;
+}
+
+.popup-select-amount_label-wrapper {
+	width: 100%;
+	margin-top: 27px;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 35px;
+	row-gap: 9px;
+}
+
+.popup-select-amount_form_item {
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0 5px 92px 0 rgba(0, 0, 0, 0.06);
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	max-width: 347px;
+	width: 100%;
+	height: 56px;
+	cursor: pointer;
+}
+
+.popup-select-amount_label {
+	display: flex;
+	align-items: center;
+}
+
+.popup-select-amount_label input {
+	width: 20px;
+	height: 20px;
+	stroke-width: 1px;
+	stroke: #C4C4C4;
+}
+
+.popup-select-amount_form_item_text {
+	color: #444;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+.popup-select-amount_form_item_text span {
+	color: #0085FF;
+}
+
+@media (max-width: 570px) {
+	.popup-select-amount {
+		max-width: 290px;
+	}
+
+	.popup-select-amount_form_item {
+		max-width: 246px;
+	}
+
+	.popup-select-amount_form_item_text {
+		max-width: 190px;
+	}
+}
+
+
+.popup-sing-in-sing-up_content {
+	max-width: 805px;
+	width: 100%;
+}
+
+.popup-sing-in-sing-up_content .popup-level-repair_label {
+	max-width: 511px;
+	width: 100%;
+}
+
+.popup-sing-in-sing-up_forget-password {
+	display: flex;
+	gap: 22px;
+
+	color: #5E5E5E;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.popup-sing-in-sing-up_forget-password a {
+	color: #5E5E5E;
+	text-decoration-line: underline;
+}
+
+.popup-sing-in-sing-up_submit {
+	margin-top: 31px;
+	border-radius: 5px;
+}
+
+.popup-sing-in-sing-up_btn-sing-up-wrapper {
+	margin: 48px -50px -50px -50px;
+	height: 101px;
+	border-radius: 0 0 10px 10px;
+	background: #F5F5F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-sing-in-sing-up_btn-sing-up {
+	display: flex;
+	height: 57px;
+	padding: 20px 34px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: 1px solid #68687D;
+
+	color: #68687D;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+@media (max-width: 570px) {
+	.popup-sing-in-sing-up_content {
+		max-width: 290px;
+		padding-top: 30px;
+		border-radius: 10px;
+	}
+
+	.popup-sing-in-sing-up_btn-sing-up-wrapper {
+		margin: 22px -18px -18px -18px;
+	}
+
+	.popup-sing-in-sing-up_content .popup-level-repair_header {
+		font-size: 16px;
+	}
+}
+
+
+.popup-sing-in-sing-up_content.sign-up {
+	padding: 40px;
+}
+
+.popup-sign-in-sign-up_label-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	flex-wrap: wrap;
+}
+
+.popup-select-amount_item_text {
+	max-width: 180px;
+	margin-bottom: -50px;
+
+	color: #636363;
+	font-size: 12px;
+	line-height: 20px;
+	opacity: 0.8;
+}
+
+.popup-sing-in-sing-up_subtitle {
+	margin-top: 14px;
+	display: flex;
+	gap: 8px;
+
+	color: #5E5E5E;
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration-line: underline;
+}
+
+.popup-sing-in-sing-up_subtitle button {
+	border: none;
+	padding: 0;
+	background-color: unset;
+
+	color: #0085FF;
+	font-size: 12px;
+	line-height: 18px;
+	text-decoration-line: underline;
+}
+
+@media (max-width: 805px) {
+	.popup-sign-in-sign-up_label-wrapper input {
+		height: 50px;
+	}
+
+	.popup-select-amount_item_text {
+		max-width: 100%;
+		margin-bottom: 0;
+
+		font-size: 10px;
+		line-height: 16px
+	}
+}
+
+
+.popup-order-for-rent_Container {
+	position: relative;
+	max-width: 919px;
+	width: 100%;
+	background: #FFF;
+	padding: 32px 38px 40px 38px;
+	margin: auto;
+}
+
+.popup-order-for-rent_close {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 40px;
+	background: #0085FF;
+	top: 0;
+	right: 0;
+	border: none;
+	padding: 0;
+}
+
+.popup-order-for-rent_close:after {
+	display: block;
+	content: '';
+	width: 35px;
+	height: 39px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 38 38' fill='none'%3E%3Cpath d='M23.5791 25.1512L18.8633 20.4354L14.1475 25.1512L12.5755 23.5793L17.2913 18.8634L12.5755 14.1476L14.1475 12.5757L18.8633 17.2915L23.5791 12.5757L25.151 14.1476L20.4352 18.8634L25.151 23.5793L23.5791 25.1512Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.popup-order-for-rent_title {
+	color: #444;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.popup-order-for-rent_content {
+	margin-top: 22px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.popup-order-for-rent_select-part {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 0 0 -38px -38px;
+	max-width: 443px;
+	width: 100%;
+	background: #F5F5F5;
+	padding: 30px 40px 40px 38px;
+	overflow-y: auto;
+	height: 687px;
+}
+
+.popup-order-for-rent_select-part_title {
+	color: #444;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.popup-order-for-rent_select-part_item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background: #FFF;
+	padding: 14px;
+	align-items: center;
+	gap: 18px;
+	cursor: pointer;
+}
+
+.popup-order-for-rent_select-part_item:nth-child(2) {
+	margin-top: 30px;
+}
+
+.popup-order-for-rent_select-part_label {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+}
+
+.popup-order-for-rent_select-part_label input {
+	width: 19px;
+	height: 19px;
+	border: 1px solid #E5E5E5;
+}
+
+.popup-order-for-rent_select-part_img {
+	width: 65px;
+	height: 65px;
+	object-fit: cover;
+}
+
+.popup-order-for-rent_select-part_item_text {
+	display: flex;
+	flex-direction: column;
+
+	color: #444;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_select-part_item_text span {
+	color: #444;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params {
+	max-width: 475px;
+	width: 100%;
+	margin: 0 -38px -38px 0;
+	padding: 30px 38px 30px 24px;
+}
+
+.popup-order-for-rent_params_product-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+}
+
+.popup-order-for-rent_params_product {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.popup-order-for-rent_params_product_img {
+	max-width: 180px;
+	width: 100%;
+	height: 136px;
+	object-fit: cover;
+}
+
+.popup-order-for-rent_params_product_name {
+	max-width: 163px;
+	width: 100%;
+
+	color: #444;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_product_price-wrapper {
+	max-width: 338px;
+	width: 100%;
+	margin-left: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid #EEE;
+	padding-bottom: 8px;
+}
+
+.popup-order-for-rent_params_product_data {
+	color: #444;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_product_price {
+	color: #444;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_select-day-and-pieces {
+	margin-top: 30px;
+	margin-left: 20px;
+	display: flex;
+	gap: 30px;
+}
+
+.popup-order-for-rent_params_count-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.popup-order-for-rent_params_counter_title {
+	color: #94A4B4;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_counter {
+	display: flex;
+}
+
+.popup-order-for-rent_params_decrement {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 40px;
+	background: #F3F3F3;
+	border: none;
+	padding: 0;
+}
+
+.popup-order-for-rent_params_decrement:after {
+	display: block;
+	content: '';
+	width: 18px;
+	height: 18px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_1322_1524)'%3E%3Cpath d='M14.25 9.75H3.75V8.25H14.25V9.75Z' fill='%23444444'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1322_1524'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.popup-order-for-rent_params_count {
+	width: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #444;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_increment {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 40px;
+	background: #0085FF;
+	border: none;
+	padding: 0;
+}
+
+.popup-order-for-rent_params_increment:after {
+	display: block;
+	content: '';
+	width: 18px;
+	height: 18px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_1322_1518)'%3E%3Cpath d='M14.25 9.75H9.75V14.25H8.25V9.75H3.75V8.25H8.25V3.75H9.75V8.25H14.25V9.75Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1322_1518'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.popup-order-for-rent_params_contacts {
+	margin-top: 70px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.popup-order-for-rent_params_contacts-title {
+	color: #444;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_label {
+	width: 100%;
+	margin-top: 12px;
+}
+
+.popup-order-for-rent_params_label input {
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid #F3F3F3;
+	padding: 15px 18px;
+}
+
+.popup-order-for-rent_params_btn-submit {
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	width: 271px;
+	height: 52px;
+	border-radius: 100px;
+	background: #0085FF;
+	border: none;
+
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.popup-order-for-rent_params_subtitle {
+	display: flex;
+	width: 100%;
+	gap: 8px;
+
+	margin-top: 8px;
+	color: #94A4B4;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.popup-order-for-rent_params_subtitle a {
+	color: #0085FF;
+}
+
+.popup-order-for-rent_params_subtitle input {
+	margin-top: 12px;
+	max-width: 18px;
+	width: 100%;
+	height: 18px;
+	cursor: pointer;
+	border: 1px solid #D9D9D9;
+}
+
+@media (max-width: 919px) {
+	.popup-order-for-rent_Container {
+		width: max-content;
+		padding: 22px 0 0 0;
+	}
+
+	.popup-order-for-rent_title {
+		margin-left: 38px;
+	}
+
+	.popup-order-for-rent_content {
+		flex-direction: column-reverse;
+	}
+
+	.popup-order-for-rent_select-part {
+		max-width: 100%;
+		margin: 0;
+		height: inherit;
+	}
+	.popup-order-for-rent_params {
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.popup-order-for-rent_params_select-day-and-pieces {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 570px) {
+	.popup-order-for-rent_Container {
+		padding: 24px 0 0 0;
+		max-width: 290px;
+	}
+
+	.popup-order-for-rent_title {
+		margin-left: 26px;
+		font-size: 16px;
+	}
+
+	.popup-order-for-rent_params {
+		padding: 25px;
+	}
+
+	.popup-order-for-rent_params_product-wrapper {
+		gap: 24px;
+	}
+
+	.popup-order-for-rent_params_product_img {
+		max-width: 64px;
+		height: 49px;
+	}
+
+	.popup-order-for-rent_params_product_name {
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+	}
+
+	.popup-order-for-rent_params_product_price-wrapper {
+		margin-left: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.popup-order-for-rent_params_select-day-and-pieces {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.popup-order-for-rent_params_contacts {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+
+	.popup-order-for-rent_params_contacts-title {
+		margin-bottom: 10px;
+	}
+
+	.popup-order-for-rent_params_label {
+		margin-top: 10px;
+	}
+
+	.popup-order-for-rent_params_btn-submit {
+		margin-top: 21px;
+		width: 239px;
+	}
+
+	.popup-order-for-rent_params_subtitle {
+		margin-top: 11px;
+	}
+
+
+	.popup-order-for-rent_select-part {
+		padding: 14px;
+	}
+
+	.popup-order-for-rent_select-part_title {
+		display: none;
+	}
+
+	.popup-order-for-rent_select-part_item {
+		min-height: 96px;
+		align-items: end;
+	}
+
+	.popup-order-for-rent_select-part_item:nth-child(2) {
+		margin-top: 0;
+	}
+
+	.popup-order-for-rent_select-part_img {
+		max-width: 46px;
+		height: 46px;
+	}
+}
+
+
+.repair-listing_form-select {
+	width: 100%;
+	padding-left: 20px;
+}
+
+.repair-listing_form-select_container {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	color: #444;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.repair-listing_form-select_container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.repair-listing_form-select_checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	border: solid 1px #D9D9D9;
+	border-radius: 50%;
+}
+
+.repair-listing_form-select_container input:checked ~ .repair-listing_form-select_checkmark {
+	background-color: #0085FF;
+	border: solid 1px #0085FF;
+}
+
+.repair-listing_form-select_container input:checked ~ .repair-listing_form-select_checkmark:after {
+	display: block;
+}
+
+
+.select-slider-wrapper {
+	position: relative;
+	width: 80%;
+	padding: 20px 22px;
+}
+.select-slider_container {
+	position: relative;
+	width: 100%;
+	margin-top: 7px;
+}
+.select-slider_container input[type="range"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	outline: none;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	background-color: transparent;
+	pointer-events: none;
+}
+.select-slider_slider-track {
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+}
+.select-slider_container input::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	height: 5px;
+}
+.select-slider_container input::-moz-range-track {
+	-moz-appearance: none;
+	height: 5px;
+}
+.select-slider_container input::-ms-track {
+	appearance: none;
+	height: 5px;
+}
+.select-slider_container input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 16px;
+	height: 16px;
+	background-color: #444444;
+	cursor: pointer;
+	margin-top: -5px;
+	pointer-events: auto;
+	border-radius: 50%;
+}
+.select-slider_container input::-moz-range-thumb {
+	-webkit-appearance: none;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #444444;
+	pointer-events: auto;
+	border: none;
+}
+.select-slider_container input[type="range"]::-ms-thumb {
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #444444;
+	pointer-events: auto;
+}
+.select-slider_container input:active::-webkit-slider-thumb {
+	background-color: #ffffff;
+	border: 1px solid #0085FF;
+}
+.select-slider_values {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	color: #444;
+	font-size: 13px;
+	line-height: 150%;
+}
+
+
+.popup-order-for-rent_select-part[ data-page-type="repair-listing"] {
+	height: 630px;
+}
 
 
 

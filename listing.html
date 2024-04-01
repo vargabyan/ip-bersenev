@@ -209,30 +209,52 @@
 								<div class="filter-title">
 									<p>Фильтр по параметрам</p>
 								</div>
-
 								<div class="accordion" id="accordionPanelsStayOpenExample">
 									<div class="accordion-item">
 										<div class="accordion-header" id="panelsStayOpen-headingOne">
 											<button class="accordion-button" type="button" data-bs-toggle="collapse"
 												data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
 												aria-controls="panelsStayOpen-collapseOne">
-												Цена
+												Цена (руб.)
 											</button>
 										</div>
 										<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
 											aria-labelledby="panelsStayOpen-headingOne">
-											<div class="accordion-body">
-												<form action="#!">
-													<div class="filter-search">
-														<input type="search" name="search" placeholder="Поиск...">
-														<button type="submit"><img src="images/icons/search-icon-blue.svg" alt=""></button>
-													</div>
+											<div class="select-slider-wrapper">
+												<div class="select-slider_values">
+													<p> от
+														<span data-select-slider-value-min>
+														  0
+														</span>
+													</p>
+													<p> до
+														<span data-select-slider-value-max>
+														  100
+														</span>
+													</p>
+												</div>
+												<form action="" class="select-slider_container" data-select-slider-container>
+													<div class="select-slider_slider-track"></div>
+													<label>
+														<input type="range" min="0" step="1000" max="7000000" value="2000000" data-select-slider-input-decrement>
+													</label>
+													<label>
+														<input type="range" min="0" step="1000" max="7000000" value="5000000" data-select-slider-input-increment>
+													</label>
 												</form>
 											</div>
 										</div>
 									</div>
 
 									<div class="accordion-item">
+										<div class="accordion-body">
+											<form action="#!">
+												<div class="filter-search">
+													<input type="search" name="search" placeholder="Поиск...">
+													<button type="submit"><img src="images/icons/search-icon-blue.svg" alt=""></button>
+												</div>
+											</form>
+										</div>
 										<div class="accordion-header" id="panelsStayOpen-headingTwo">
 											<button class="accordion-button" type="button" data-bs-toggle="collapse"
 												data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
@@ -242,7 +264,29 @@
 										</div>
 										<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
 											aria-labelledby="panelsStayOpen-headingTwo">
-											<div class="accordion-body no-border">
+											<form class="repair-listing_form-select" action="">
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" checked="checked" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+											</form>
+											<div class="accordion-body">
 												<div class="show-btn">
 													<a href="#!">Показать</a>
 												</div>
@@ -428,7 +472,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -459,7 +503,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -490,7 +534,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -522,7 +566,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -553,7 +597,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -584,7 +628,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -616,7 +660,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -647,7 +691,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -678,7 +722,7 @@
 											<p class="product-price">от 1 500 руб.</p>
 											<span class="product-stock">В наличии</span>
 					
-											<div class="product-btn-block">
+											<div class="product-btn-block" data-btn-open-popup-level-repair>
 												<a href="#!" class="product-btn">Взять в аренду</a>
 											</div>
 										</div>
@@ -977,6 +1021,104 @@
             </div>
         </div>
     </div>
+
+	<!-- Modal level repair -->
+	<section class="popup-level-repair" data-popup-level-repair>
+		<form class="popup-order-for-rent_Container">
+			<button class="popup-order-for-rent_close" data-popup-level-repair_close></button>
+			<p class="popup-order-for-rent_title">Заказ на аренду</p>
+			<div class="popup-order-for-rent_content">
+				<div class="popup-order-for-rent_select-part">
+					<p class="popup-order-for-rent_select-part_title">дОБАВЬТЕ К АЗАКАЗУ</p>
+
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+
+				</div>
+				<div class="popup-order-for-rent_params">
+					<div class="popup-order-for-rent_params_product-wrapper">
+						<div class="popup-order-for-rent_params_product">
+							<img class="popup-order-for-rent_params_product_img" src="images/card-product.png" alt="">
+							<p class="popup-order-for-rent_params_product_name">Резчик швов Wacker Neuson MFS-1350CE</p>
+						</div>
+						<div class="popup-order-for-rent_params_product_price-wrapper">
+							<p class="popup-order-for-rent_params_product_data">Сутки</p>
+							<p class="popup-order-for-rent_params_product_price">2 500 руб.</p>
+						</div>
+					</div>
+					<div class="popup-order-for-rent_params_select-day-and-pieces">
+						<div class="popup-order-for-rent_params_count-wrapper">
+							<p class="popup-order-for-rent_params_counter_title">Кол-во дней</p>
+							<div class="popup-order-for-rent_params_counter" data-conunter>
+								<button class="popup-order-for-rent_params_decrement" type="button" data-counter-decrement></button>
+								<p class="popup-order-for-rent_params_count" data-conunter-value>1</p>
+								<button class="popup-order-for-rent_params_increment" type="button" data-conunter-increment></button>
+							</div>
+						</div>
+						<div class="popup-order-for-rent_params_count-wrapper">
+							<p class="popup-order-for-rent_params_counter_title">Кол-во штук</p>
+							<div class="popup-order-for-rent_params_counter" data-conunter>
+								<button class="popup-order-for-rent_params_decrement" type="button" data-counter-decrement></button>
+								<p class="popup-order-for-rent_params_count" data-conunter-value>1</p>
+								<button class="popup-order-for-rent_params_increment" type="button" data-conunter-increment></button>
+							</div>
+						</div>
+					</div>
+					<div class="popup-order-for-rent_params_contacts">
+						<p class="popup-order-for-rent_params_contacts-title">Заполните форму</p>
+						<label class="popup-order-for-rent_params_label">
+							<input type="text" placeholder="Имя">
+						</label>
+						<label class="popup-order-for-rent_params_label">
+							<input type="tel" placeholder="Телефон">
+						</label>
+						<button class="popup-order-for-rent_params_btn-submit" data-popup-level-repair-btn-submit>Оформить заказ</button>
+						<p class="popup-order-for-rent_params_subtitle">Политика конфиденциальности и продолжаем дальше</p>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
 
 	<script src="js/jquery-3.7.0.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>

@@ -278,11 +278,14 @@ items.forEach(function(number__calculate) {
 
 document.addEventListener('click', (e) => {
     const button = e.target.closest('[data-popup-level-repair_close]');
+    const btnSubmit = e.target.closest('[data-popup-level-repair-btn-submit]');
 
-    if (button) {
-        const popup = button.closest('.popup-level-repair');
+    if (button || btnSubmit) {
+        const popup = e.target.closest('.popup-level-repair');
 
-        if (popup.classList.contains('popup-level-repair-open')) popup.classList.remove('popup-level-repair-open');
+
+        popup.classList.remove('popup-level-repair-open');
+        document.querySelector('body').style['overflow'] = '';
     }
 })
 
@@ -333,6 +336,87 @@ document.addEventListener('click', (e) => {
     }
 })
 
+
+document.addEventListener('click', e => {
+    const item = e.target.closest('[data-select-amount-form-item]');
+
+    if (item) {
+        item.querySelector('[data-select-amount-form-radio]').checked = true;
+    }
+})
+
+
+document.addEventListener('click', e => {
+    const btnDecrement = e.target.closest('[data-counter-decrement]')
+    const btnIncrement = e.target.closest('[data-conunter-increment]')
+
+    if (btnDecrement) {
+        const container = btnDecrement.closest('[data-conunter]')
+        let value = container.querySelector('[data-conunter-value]')
+
+        if (+value.textContent > 1) {
+            value.textContent = +value.textContent - 1
+        }
+    }
+    if (btnIncrement) {
+        const container = btnIncrement.closest('[data-conunter]')
+        let value = container.querySelector('[data-conunter-value]')
+
+        value.textContent = +value.textContent + 1
+    }
+
+})
+
+window.onload = function () {
+    const sliderOne = document.querySelector("[data-select-slider-input-decrement]");
+    const sliderTwo = document.querySelector("[data-select-slider-input-increment]");
+    const displayValOne = document.querySelector("[data-select-slider-value-min]");
+    const displayValTwo = document.querySelector("[data-select-slider-value-max]");
+    const minGap = 0;
+    const sliderTrack = document.querySelector(".select-slider_slider-track");
+    const sliderMaxValue = document.querySelector("[data-select-slider-input-decrement]").max;
+
+    document.addEventListener('input', e => {
+        let slider = e.target.closest("[data-select-slider-input-decrement]");
+
+        if (slider) {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderOne.value = parseInt(sliderTwo.value) - minGap;
+            }
+            fillColor();
+        }
+    })
+
+    document.addEventListener('input', e => {
+        let slider = e.target.closest("[data-select-slider-input-increment]");
+
+        if (slider) {
+            if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+                sliderTwo.value = parseInt(sliderOne.value) + minGap;
+            }
+            fillColor();
+        }
+    })
+    function fillColor() {
+        displayValOne.textContent = sliderOne.value;
+        displayValTwo.textContent = sliderTwo.value;
+        percent1 = (sliderOne.value / sliderMaxValue) * 100;
+        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+        sliderTrack.style.background = `linear-gradient(to right, #D9D9D9 ${percent1}% , #0085FF ${percent1}% , #0085FF ${percent2}%, #D9D9D9 ${percent2}%)`;
+    }
+    fillColor()
+};
+
+document.addEventListener('click', (e) => {
+    const button = e.target.closest('[data-btn-open-popup-level-repair]');
+
+    if (button) {
+        const popup = document.querySelector('[data-popup-level-repair]');
+
+        popup.classList.add('popup-level-repair-open');
+        document.querySelector('body').style['overflow'] = 'hidden'
+    }
+})
 
 
 

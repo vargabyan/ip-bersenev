@@ -227,11 +227,33 @@
 											<button class="accordion-button" type="button" data-bs-toggle="collapse"
 												data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
 												aria-controls="panelsStayOpen-collapseTwo">
-												Производитель
+												Выбрать производителя
 											</button>
 										</div>
 										<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
 											aria-labelledby="panelsStayOpen-headingTwo">
+											<form class="repair-listing_form-select" action="">
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" checked="checked" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+												<label class="repair-listing_form-select_container">Makita
+													<input type="radio" name="radio">
+													<span class="repair-listing_form-select_checkmark"></span>
+												</label>
+											</form>
 											<div class="accordion-body">
 												<div class="show-btn">
 													<a href="#!">Показать</a>
@@ -371,7 +393,7 @@
                                                 <span>Гарантия – До 1 года</span>
                                             </div>
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 1 500 руб.</p>
 											</div>
 										</div>
@@ -392,7 +414,7 @@
                                             </div>
                                             
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 800 р.</p>
 											</div>
 										</div>
@@ -413,7 +435,7 @@
                                             </div>
                                             
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 800 р.</p>
 											</div>
 										</div>
@@ -434,7 +456,7 @@
                                                 <span>Гарантия – До 1 года</span>
                                             </div>
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 1 500 руб.</p>
 											</div>
 										</div>
@@ -455,7 +477,7 @@
                                             </div>
                                             
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 800 р.</p>
 											</div>
 										</div>
@@ -476,7 +498,7 @@
                                             </div>
                                             
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 800 р.</p>
 											</div>
 										</div>
@@ -497,7 +519,7 @@
                                                 <span>Гарантия – До 1 года</span>
                                             </div>
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 1 500 руб.</p>
 											</div>
 										</div>
@@ -518,7 +540,7 @@
                                             </div>
                                             
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 800 р.</p>
 											</div>
 										</div>
@@ -539,7 +561,7 @@
                                             </div>
                                             
 											<div class="rl-btn-block d-flex align-items-center">
-                                                <a href="#!" class="rl-btn">Заказать</a>
+                                                <a href="#!" class="rl-btn" data-btn-open-popup-level-repair>Заказать</a>
                                                 <p class="rl-price">от 800 р.</p>
 											</div>
 										</div>
@@ -965,6 +987,63 @@
             </div>
         </div>
     </div>
+
+	<!-- Modal level repair -->
+	<section class="popup-level-repair" data-popup-level-repair>
+		<form class="popup-order-for-rent_Container">
+			<button class="popup-order-for-rent_close" data-popup-level-repair_close></button>
+			<p class="popup-order-for-rent_title">Заказ на аренду</p>
+			<div class="popup-order-for-rent_content">
+				<div class="popup-order-for-rent_select-part" data-page-type="repair-listing">
+					<p class="popup-order-for-rent_select-part_title">дОБАВЬТЕ К АЗАКАЗУ</p>
+
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+					<div class="popup-order-for-rent_select-part_item">
+						<label class="popup-order-for-rent_select-part_label">
+							<input type="checkbox">
+						</label>
+						<img class="popup-order-for-rent_select-part_img" src="images/card-product1.png" alt="">
+						<p class="popup-order-for-rent_select-part_item_text">Диск алмазный 350 мм <span>6000 руб.</span></p>
+					</div>
+
+				</div>
+				<div class="popup-order-for-rent_params">
+					<div class="popup-order-for-rent_params_product-wrapper">
+						<div class="popup-order-for-rent_params_product">
+							<img class="popup-order-for-rent_params_product_img" src="images/card-product.png" alt="">
+							<p class="popup-order-for-rent_params_product_name">Резчик швов Wacker Neuson MFS-1350CE</p>
+						</div>
+						<div class="popup-order-for-rent_params_product_price-wrapper">
+							<p class="popup-order-for-rent_params_product_data">Сутки</p>
+							<p class="popup-order-for-rent_params_product_price">2 500 руб.</p>
+						</div>
+					</div>
+					<div class="popup-order-for-rent_params_contacts">
+						<p class="popup-order-for-rent_params_contacts-title">Заполните форму</p>
+						<label class="popup-order-for-rent_params_label">
+							<input type="text" placeholder="Имя">
+						</label>
+						<label class="popup-order-for-rent_params_label">
+							<input type="tel" placeholder="Телефон">
+						</label>
+						<button class="popup-order-for-rent_params_btn-submit" data-popup-level-repair-btn-submit>Оформить заказ</button>
+						<label class="popup-order-for-rent_params_subtitle">
+							<input type="checkbox">
+							<span>
+								Даю согласие на <a href="/policy">обработку своих персональных данных</a> в соответствии со статьей 9 Федерального закона от 27 и.ля 2006 г. N 152-ФЗ “О персональных данных”
+							</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
 
 	<script src="js/jquery-3.7.0.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
