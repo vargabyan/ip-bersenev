@@ -374,7 +374,6 @@ window.onload = function () {
     const displayValTwo = document.querySelector("[data-select-slider-value-max]");
     const minGap = 0;
     const sliderTrack = document.querySelector(".select-slider_slider-track");
-    const sliderMaxValue = document.querySelector("[data-select-slider-input-decrement]").max;
 
     document.addEventListener('input', e => {
         let slider = e.target.closest("[data-select-slider-input-decrement]");
@@ -397,14 +396,18 @@ window.onload = function () {
             fillColor();
         }
     })
-    function fillColor() {
-        displayValOne.textContent = sliderOne.value;
-        displayValTwo.textContent = sliderTwo.value;
-        percent1 = (sliderOne.value / sliderMaxValue) * 100;
-        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-        sliderTrack.style.background = `linear-gradient(to right, #D9D9D9 ${percent1}% , #0085FF ${percent1}% , #0085FF ${percent2}%, #D9D9D9 ${percent2}%)`;
+
+    const sliderMaxValue = document.querySelector("[data-select-slider-input-decrement]");
+    if (sliderMaxValue) {
+        function fillColor() {
+            displayValOne.textContent = sliderOne.value;
+            displayValTwo.textContent = sliderTwo.value;
+            percent1 = (sliderOne.value / sliderMaxValue.max) * 100;
+            percent2 = (sliderTwo.value / sliderMaxValue.max) * 100;
+            sliderTrack.style.background = `linear-gradient(to right, #D9D9D9 ${percent1}% , #0085FF ${percent1}% , #0085FF ${percent2}%, #D9D9D9 ${percent2}%)`;
+        }
+        fillColor()
     }
-    fillColor()
 };
 
 document.addEventListener('click', (e) => {
@@ -415,6 +418,70 @@ document.addEventListener('click', (e) => {
 
         popup.classList.add('popup-level-repair-open');
         document.querySelector('body').style['overflow'] = 'hidden'
+    }
+})
+
+
+document.addEventListener('change', (e) => {
+    const input = e.target.closest('[data-popup-search-select-section-label] input:checked');
+
+    if (input) {
+        const wrapper = input.closest('[data-popup-search-select-section-items]');
+        const label = input.closest('[data-popup-search-select-section-label]');
+        const allLabel = wrapper.querySelectorAll('.checked[data-popup-search-select-section-label]');
+
+        label.classList.add('checked');
+        allLabel.forEach(item => {
+            item.classList.remove('checked');
+        })
+    }
+})
+
+document.addEventListener('click', (e) => {
+    const button = e.target.closest('[data-popup-search-btn-close]');
+
+    if (button) {
+        const popup = button.closest('[data-popup-search]');
+
+        popup.classList.remove('active');
+        // document.querySelector('body').style['overflow'] = '';
+    }
+})
+
+document.addEventListener('click', (e) => {
+    const headSearch = e.target.closest('[data-head-search-input]');
+
+    if (headSearch) {
+        const popupSearch = document.querySelector('[data-popup-search]');
+
+        popupSearch.classList.add('active');
+        // document.querySelector('body').style['overflow'] = 'hidden';
+    }
+})
+
+
+document.addEventListener('submit', (e) => {
+    const form = e.target.closest('[data-popup-search-form]');
+
+    if (form) {
+        e.preventDefault();
+        const popupSearch = form.closest('[data-popup-search]');
+
+        popupSearch.classList.remove('active');
+        // document.querySelector('body').style['overflow'] = '';
+    }
+})
+
+document.addEventListener('input', (e) => {
+    const searchInput = e.target.closest('[data-popup-search-input]');
+
+    if (searchInput) {
+        const popupSearch = searchInput.closest('[data-popup-search]');
+        const popularContent = popupSearch.querySelector('[data-popup-search-popular]');
+        const popularProducts = popupSearch.querySelector('[data-general-product-sec]');
+
+        popularContent.classList.add('active');
+        popularProducts.classList.add('active');
     }
 })
 
