@@ -10732,7 +10732,53 @@ footer .ftr-politic a:hover {
 
 
 .wrapper.search-page main {
-	height: 100vh;
+	min-height: 100vh;
+}
+
+
+.search-not-find_content {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.search-not-find_title {
+	font-weight: 700;
+}
+
+.search-not-find_description {
+	max-width: 701px;
+	color: #68687D;
+	font-weight: 400;
+}
+
+.search-page .general-card-table tr {
+	display: grid;
+	grid-template-columns: 57px 1fr minmax(142px, 242px);
+	border-top-color: #BEBEBE;
+}
+
+.search-page .btn-see-more {
+	width: 100%;
+	display: flex;
+	padding: 13px 306px;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #E5E5E5;
+
+	color: #444;
+	font-family: Manrope;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.search-page .btn-see-more:hover {
+	background: #444;
+	color: #fff;
 }
 
 
@@ -10748,6 +10794,11 @@ footer .ftr-politic a:hover {
 	.popup-search_popular {
 		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 		gap: 30px;
+	}
+
+	.search-page .btn-see-more {
+		padding: 13px 30px;
+
 	}
 }
 
